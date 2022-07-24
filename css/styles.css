@@ -72,14 +72,12 @@ text-decoration: none;
 
 /* header */
 .subject {
-    padding-top: 24px;
+    border-bottom: 1px solid #ECECEC;
 }
 .subject-bord {
-    border-bottom: 1px solid #ECECEC;
     display: flex;
     align-items: center;
-    justify-content: center;
-        }
+    }
 
 .logo {  
     text-decoration: none;  
@@ -150,14 +148,10 @@ width: 1600px;
 background-color: var(--bg-color);
 margin-right: auto;
 margin-left: auto;
-}
-
-.hero-text {
 padding-top: 200px;
 padding-bottom: 200px;
-
-
 }
+
 .hero-title {
 color: var(--title-second-color);
 font-weight: 900;
@@ -167,7 +161,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 max-width: 696px;
-margin: 0 auto;
+margin: 0 auto 30px;
 }
 /* button */
 .hero-btn {
@@ -197,7 +191,6 @@ height: 50px;
 /* benefits */
 .benefits-list {
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 .benefits-title {
@@ -241,7 +234,7 @@ margin-right: 30px;
 }
 .team-title {
     background-color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .team-member {
     font-weight: 500;
@@ -249,13 +242,21 @@ font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--title-text-color)
+color: var(--title-text-color);
+margin-bottom: 10px;
 }
+
+.team-text-block {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
 .team-text {
     font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+
 }
 
 .team-list {
@@ -281,9 +282,13 @@ letter-spacing: 0.03em;
 .white-logo {
     color: var(--title-second-color);
 }
+
+.basement-addres {
+    margin-top: 20px;
+}
+
 .basement-addres-title {
 font-style: normal;
-margin-top: 20px;
 margin-bottom: 9px;
 font-weight: 400;
 font-size: 14px;
@@ -300,10 +305,12 @@ letter-spacing: 0.03em;
 color: var(--grey-contacts-color)
 }
 
+.bs-contact {
+    margin-bottom: 9px;
+}
 
 .basement-mail-link {
 display: inline-block;
-margin-bottom: 9px;
 }
 /* portfolio */
 .visually-hidden { 
@@ -321,6 +328,7 @@ margin-bottom: 9px;
 
     .portfolio-menu-list {
         display: flex;
+        margin-bottom: 50px;
         gap: 8px;
         justify-content: center;
         
@@ -356,7 +364,8 @@ margin-bottom: 9px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-text-color)
+    color: var(--title-text-color);
+    margin-bottom: 4px;
     }    
 
     .portfolio-progects {
@@ -367,11 +376,10 @@ margin-bottom: 9px;
         }
 
     .portfolio-item {
-    flex-basis:calc(100% / 3 -30px);
+    flex-basis:calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    border-bottom: 1px solid rgba(238, 238, 238, 1)
-    } 
+        } 
 
     .portfolio-text {
     font-weight: 400;
@@ -382,4 +390,6 @@ margin-bottom: 9px;
 
     .card-content {
     padding: 20px 24px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-top: none;
     }
